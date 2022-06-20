@@ -1,0 +1,61 @@
+.blueBtn {
+  display: flex;
+  justify-content: end;
+  padding-right: 5%;
+}
+.btnOne {
+  background-color: white;
+  border: 3px solid rgb(18, 148, 235);
+  color: rgb(18, 148, 235);
+  padding: 10px 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 7px;
+  position: absolute;
+  
+}
+.mainContainer {
+    display: flex;
+    justify-content: center;
+}
+.btnTwo {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 7px; 
+    cursor: pointer;
+
+
+}
+
+.btnTwo:disabled {
+    opacity: 0.5;
+    cursor: no-drop;
+}
+.text {
+font-size: 1.1em;
+}
+.delete {
+color: red;
+cursor: pointer;
+}
+
+.detailBlock {
+position: absolute;
+left: 60%;
+height: 10%;
+width: 17%;
+font-size: 1.2em;
+box-shadow: 4px 4px 4px grey;
+background-color: white;
+}
+.x{
+  color: red;
+  padding-left: 90%;
+  cursor: pointer;
+}
