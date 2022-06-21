@@ -30,16 +30,20 @@ export default function Maping() {
     },
   ]);
 
-  const [value, setValue] = useState("")
+  const [value, setValue] = useState("");
 
-  const filteredSneakers = products.filter(sneaker => {
-    return sneaker.name.toLowerCase().includes(value.toLowerCase())
-  })
+  const filteredSneakers = products.filter((sneaker) => {
+    return sneaker.name.toLowerCase().includes(value.toLowerCase());
+  });
 
   return (
     <>
       <div className={styles.mapingMainContainer}>
-        <input type="text" placeholder="Введите название" onChange={(e) => setValue(e.target.value)}></input>
+        <input
+          type="text"
+          placeholder="Введите название"
+          onChange={(e) => setValue(e.target.value)}
+        ></input>
         <div className={styles.maping}>
           {filteredSneakers.map((item, index) => {
             return (

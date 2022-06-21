@@ -13,52 +13,49 @@
   font-size: 20px;
   border-radius: 7px;
   position: absolute;
-  
 }
 .mainContainer {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .btnTwo {
-    background-color: green;
-    border: none;
-    color: white;
-    padding: 10px 25px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 7px; 
-    cursor: pointer;
-
-
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 7px;
+  cursor: pointer;
 }
 
 .btnTwo:disabled {
-    opacity: 0.5;
-    cursor: no-drop;
+  opacity: 0.5;
+  cursor: no-drop;
 }
 .text {
-font-size: 1.1em;
+  font-size: 1.1em;
 }
 .delete {
-color: red;
-cursor: pointer;
+  color: red;
+  cursor: pointer;
 }
 
 .detailBlock {
-position: absolute;
-left: 60%;
-height: 10%;
-width: 17%;
-font-size: 1.2em;
-box-shadow: 4px 4px 4px grey;
-background-color: white;
+  position: absolute;
+  left: 60%;
+  height: 10%;
+  width: 17%;
+  font-size: 1.2em;
+  box-shadow: 4px 4px 4px grey;
+  background-color: white;
 }
-.x{
+.x {
   color: red;
   padding-left: 90%;
   cursor: pointer;
 }
 .images {
-width: 300px;
+  width: 300px;
 }

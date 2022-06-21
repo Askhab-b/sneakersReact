@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./header.module.css";
 
-export default function Header({item}) {
+export default function Header({ item }) {
   const [twobasket, setTwobasket] = useState("Добавить в корзину");
   const [disable, setDisable] = useState(false);
   const [deleteBasket, setDeleteBasket] = useState("");
@@ -26,7 +26,7 @@ export default function Header({item}) {
   const handleDeleteDetail = () => {
     setDetailText(false);
   };
-console.log(item)
+  console.log(item);
   return (
     <>
       <div className={styles.mainContainer}>
@@ -41,18 +41,16 @@ console.log(item)
             >
               Детали
             </button>
-            
+
             {detailText && (
-              <div
-                className={styles.detailBlock}
-                
-
-              > <div className={styles.x} onClick={handleDeleteDetail}>x</div>
-
+              <div className={styles.detailBlock}>
+                {" "}
+                <div className={styles.x} onClick={handleDeleteDetail}>
+                  x
+                </div>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
                 dignissimos.
               </div>
-              
             )}
           </div>
           <h1>{item.price}</h1>
