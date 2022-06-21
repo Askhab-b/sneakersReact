@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import styles from "./header.module.css";
-import img from "../../img/Sneaker.jpeg";
 
-export default function Header() {
+export default function Header({item}) {
   const [twobasket, setTwobasket] = useState("Добавить в корзину");
   const [disable, setDisable] = useState(false);
   const [deleteBasket, setDeleteBasket] = useState("");
@@ -27,13 +26,13 @@ export default function Header() {
   const handleDeleteDetail = () => {
     setDetailText(false);
   };
-
+console.log(item)
   return (
     <>
       <div className={styles.mainContainer}>
         <div className={styles.container}>
-          <img src={img} />
-          <h1>Nike Sneaker</h1>
+          <img src={item.img} className={styles.images} />
+          <h1>{item.name}</h1>
           <div className={styles.blueBtn}>
             <button
               className={styles.btnOne}
@@ -56,7 +55,7 @@ export default function Header() {
               
             )}
           </div>
-          <h1>$120</h1>
+          <h1>{item.price}</h1>
           <div className={styles.footer}>
             <hr />
             <p className={styles.text}>

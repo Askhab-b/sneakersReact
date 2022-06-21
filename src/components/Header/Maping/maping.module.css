@@ -1,0 +1,9 @@
+.maping {
+display: flex;
+gap: 3%;
+}
+input {
+border-color: blue;
+width: 20%;
+margin-left: 30%;
+}

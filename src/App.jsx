@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./app.module.css";
-import Header from "./components/Header/Header";
+import Maping from "./components/Header/Maping/Maping";
 
 function App() {
   return (
     <div className={styles.app}>
-    <Header/>
+      <Maping />
     </div>
   );
 }
